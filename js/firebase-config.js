@@ -1,6 +1,6 @@
 // Firebase Functions
-const { initializeApp } = require("firebase/app");
-const { getAnalytics } = require("firebase/analytics");
+const firebase = require("firebase/app");
+require("firebase/analytics");
 
 // Web app's Firebase Configuration
 const firebaseConfig = {
@@ -14,8 +14,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+firebase.initializeApp(firebaseConfig);
+const analytics = firebase.analytics();
 
 // Export the Firebase app and analytics objects
-module.exports = { app, analytics };
+module.exports = { app: firebase, analytics };
