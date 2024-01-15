@@ -1,8 +1,30 @@
-/* Style for the buttons and layout */
+/* Style for the start button */
 button {
-    height: 5em;
-    width: 10em;
+    height: 3.5em;
+    width: 7em;
     margin: 5px;
+    border-color: black;
+    background-color: blanchedalmond;
     position: absolute;
   }
-  
+
+  /* For the created buttons for the game */
+#buttonArea {
+  min-height: 15px; /* Adjust as needed */
+  position: relative;
+  margin-top: 15px; /* Space above the buttons */
+}
+
+  /* The input box sizing for the numbers */
+input {
+  height: 3em;
+  width: 5em;
+  margin: 5px;
+  text-align: center;
+}
+
+/* The Question beside the input box */
+label {
+  font-size: 20px;
+  margin: 5px;
+}
