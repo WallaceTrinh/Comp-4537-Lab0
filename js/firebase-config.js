@@ -1,6 +1,6 @@
 // Firebase Functions
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+const { initializeApp } = require("firebase/app");
+const { getAnalytics } = require("firebase/analytics");
 
 // Web app's Firebase Configuration
 const firebaseConfig = {
@@ -18,4 +18,4 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 // Export the Firebase app and analytics objects
-export { app, analytics };
+module.exports = { app, analytics };
