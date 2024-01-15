@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memory Button Game</title>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
-
     <script src="lang/messages/en/user.js"></script>
   </head>
   <body>
-    <label for="numButtons">How many buttons do you want to create?</label>
+    <label for="numButtons">How many buttons to create?</label>
     <input type="number" id="numButtons" min="3" max="7" value="3" />
     <button id="startGame">Start!</button>
-    <script type="module" src="js/script.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
