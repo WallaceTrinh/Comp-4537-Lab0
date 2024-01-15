@@ -1,0 +1,41 @@
+[debug] [2024-01-15T07:10:02.250Z] ----------------------------------------------------------------------
+[debug] [2024-01-15T07:10:02.252Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-15T07:10:02.253Z] CLI Version:   13.0.3
+[debug] [2024-01-15T07:10:02.253Z] Platform:      win32
+[debug] [2024-01-15T07:10:02.253Z] Node Version:  v20.11.0
+[debug] [2024-01-15T07:10:02.253Z] Time:          Sun Jan 14 2024 23:10:02 GMT-0800 (Pacific Standard Time)
+[debug] [2024-01-15T07:10:02.253Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-15T07:10:02.320Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-15T07:10:02.320Z] > authorizing via signed-in user (wallacetrinh@gmail.com)
+[debug] [2024-01-15T07:10:02.320Z] [iam] checking project wallacetrinh-comp4537-la-67efb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-15T07:10:02.322Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wallacetrinh-comp4537-la-67efb:testIamPermissions [none]
+[debug] [2024-01-15T07:10:02.322Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wallacetrinh-comp4537-la-67efb:testIamPermissions x-goog-quota-user=projects/wallacetrinh-comp4537-la-67efb
+[debug] [2024-01-15T07:10:02.322Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wallacetrinh-comp4537-la-67efb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-15T07:10:02.445Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wallacetrinh-comp4537-la-67efb:testIamPermissions 200
+[debug] [2024-01-15T07:10:02.445Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wallacetrinh-comp4537-la-67efb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-15T07:10:02.446Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wallacetrinh-comp4537-la-67efb [none]
+[debug] [2024-01-15T07:10:02.569Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wallacetrinh-comp4537-la-67efb 200
+[debug] [2024-01-15T07:10:02.569Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wallacetrinh-comp4537-la-67efb {"projectId":"wallacetrinh-comp4537-la-67efb","projectNumber":"91192378604","displayName":"WallaceTrinh-Comp4537-Lab0","name":"projects/wallacetrinh-comp4537-la-67efb","resources":{"hostingSite":"wallacetrinh-comp4537-la-67efb"},"state":"ACTIVE","etag":"1_05f963f6-c5f6-4068-9c8f-c719527574f4"}
+[info] 
+[info] === Deploying to 'wallacetrinh-comp4537-la-67efb'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-01-15T07:10:02.573Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/wallacetrinh-comp4537-la-67efb/versions [none]
+[debug] [2024-01-15T07:10:02.573Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/wallacetrinh-comp4537-la-67efb/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-01-15T07:10:03.695Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/wallacetrinh-comp4537-la-67efb/versions 200
+[debug] [2024-01-15T07:10:03.695Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/wallacetrinh-comp4537-la-67efb/versions {"name":"projects/91192378604/sites/wallacetrinh-comp4537-la-67efb/versions/af4c3d24c9815739","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[wallacetrinh-comp4537-la-67efb]: beginning deploy... 
+[debug] [2024-01-15T07:10:03.712Z] Error: EPERM: operation not permitted, scandir 'C:\Users\Walla\OneDrive\Desktop\Comp4537\Lab0\Comp-4537-Lab0\firebase-debug.log'
+    at Object.readdirSync (node:fs:1515:26)
+    at GlobSync._readdir (C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\Walla\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.
