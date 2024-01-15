@@ -1,0 +1,8 @@
+/* Style for the buttons and layout */
+button {
+    height: 5em;
+    width: 10em;
+    margin: 5px;
+    position: absolute;
+  }
+  
