@@ -1,5 +1,5 @@
 // Import the Firebase configuration
-import { app, analytics } from "./firebase-config";
+const { app, analytics } = require("./firebase-config");
 
 class Button {
     constructor(color, width, height, order) {
