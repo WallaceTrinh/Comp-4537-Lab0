@@ -41,6 +41,7 @@ class Button {
   let orderClicked = [];
   
   document.getElementById('startGame').addEventListener('click', () => {
+    console.log('Start button clicked');
     const num = parseInt(document.getElementById('numButtons').value);
     if (num < 3 || num > 7) {
       alert('Please enter a number between 3 and 7.');
